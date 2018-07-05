@@ -7,7 +7,7 @@
     list-style: none;
 
     &__item {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         display: inline-block;
         padding-bottom: 0.5rem;
         
@@ -19,16 +19,17 @@
 
     &__link:link,
     &__link:visited {
-        color: $color-primary;
-        text-transform: uppercase;
+        color: $color-grey-7;
+        //text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
         border-bottom: 1px solid transparent;
-        transition: all .2s;
+        transition: all .5s;
     }
 
     &__link:hover {
-        color: $color-primary-dark;
         border-bottom: 1px solid $color-primary-dark;
     }
+
 }
+

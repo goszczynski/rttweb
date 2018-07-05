@@ -26,22 +26,24 @@ html {
   font-size: 62.5%; }
 
 body {
+  padding: 3rem 0;
   box-sizing: border-box;
   background-color: #1C1C1C; }
 
 ::selection {
-  background-color: #FF0000;
+  background-color: #F3182C;
   color: #fff; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
-  color: #777; }
+  line-height: 1.4;
+  color: #737373; }
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase; }
+  font-weight: 100;
+  font-size: 3.5rem; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -51,12 +53,12 @@ body {
   letter-spacing: .2rem; }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -76,6 +78,42 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  background-color: #F3182C;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+
+.btn:active, .btn:focus {
+  outline: none; }
+
+.footer {
+  margin: 5rem;
+  padding: 2rem 0;
+  color: #646362;
+  border-top: 1px solid #646362; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -93,26 +131,34 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  padding: 3rem 10rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 0 5rem; }
 
 .main-menu {
   list-style: none; }
   .main-menu__item {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     display: inline-block;
     padding-bottom: 0.5rem; }
     .main-menu__item:not(:last-child) {
       margin-right: 5rem; }
   .main-menu__link:link, .main-menu__link:visited {
-    color: #FF0000;
-    text-transform: uppercase;
+    color: #908D90;
     text-decoration: none;
     display: inline-block;
     border-bottom: 1px solid transparent;
-    transition: all .2s; }
+    transition: all .5s; }
   .main-menu__link:hover {
-    color: #740404;
     border-bottom: 1px solid #740404; }
+
+.section-grid {
+  margin-top: 3rem;
+  height: 90vh; }
+
+.container {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  padding: 5rem; }

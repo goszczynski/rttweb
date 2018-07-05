@@ -1,13 +1,16 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    
     font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
+    line-height: 1.4;
+    color: $color-grey-6;
 }
 
 .heading-primary {
     color: $color-white;
-    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3.5rem;
+    //text-transform: uppercase;
 }
 
 .heading-secondary {
