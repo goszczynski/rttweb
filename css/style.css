@@ -122,6 +122,11 @@ body {
     flex: 0 0 40%; }
   .section-grid__right {
     flex: 1; }
+  .section-grid__text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%); }
 
 .row {
   display: flex;
