@@ -13,6 +13,12 @@
     transform: translate(-40%, -40%);
 }
 
+@mixin flexVerticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 // MEDIA QUERY MANAGER
 /*

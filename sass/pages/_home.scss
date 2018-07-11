@@ -5,3 +5,208 @@
     padding: 5rem;
 }
 
+.section-grid {
+    margin-top: 3rem;
+    height: 90vh;
+    display: flex;
+
+    &__left {
+        flex: 0 0 40%;
+    }
+
+    &__right {
+        flex: 1;
+        //border: 1px dashed orangered;
+    }
+
+    &__text {
+       @include absCenter;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row1{
+    flex: 0 0 40%;
+    display: flex;
+
+    &__box1 {
+        flex: 0 0 33.33333%;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-grey-1, 1),
+            rgba($color-grey-2, 0.8)),
+            url(../img/s.jpg);
+        background-size: cover;
+        background-position: top;
+        transition: all .5s;
+        padding: 3rem;
+        @include flexVerticalCenter;
+        
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-1, .8),
+                rgba($color-grey-2, .8)),
+                url(../img/s.jpg);
+        }
+    }
+
+    &__box2 {
+        flex: 0 0 50%;
+        //border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+
+        &--vertical {
+            //border: 1px solid rgb(128, 0, 70);
+            flex: 1;
+            display: flex;
+        }
+
+        &--ver1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-1, .4),
+                rgba($color-grey-5, .2));
+            flex: 0 0 66.66666%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+
+            &::after {
+                content:"";
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid $color-primary;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0%, -50%);
+            }
+        }
+
+        &--ver2 {
+            background-color: $color-grey-2;
+            flex: 1;
+            @include flexVerticalCenter;
+        }
+
+        &--ver4 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-1, .4),
+                rgba($color-grey-5, .2));
+            flex: 0 0 66.66666%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+
+            &::after {
+                content:"";
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid $color-primary;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0%, -50%);
+            }
+        }
+
+    }
+
+    &__box3 {
+        flex: 1;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-grey-1, .9),
+            rgba($color-grey-2, 0.8)),
+            url(../img/mori.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+.row2{
+    flex: 0 0 40%;
+    //border: 1px solid green;
+    display: flex;
+
+    &__box {
+        flex: 1;
+        background-size: cover;
+        background-position: top;
+        transition: all .5s;
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include flexVerticalCenter;
+        
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-1, 1),
+                rgba($color-grey-2, .6)),
+                url(../img/CincMagnum.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-2, .6),
+                rgba($color-grey-1, 1)),
+                url(../img/mazak.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-grey-1, 1),
+                rgba($color-grey-2, .6)),
+                url(../img/okuma.jpg);
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        }
+    }
+}
+
+.row3{
+    flex: 1;
+    background-color: $color-grey-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 6rem; 
+}
+
+.contact-block {
+   color: $color-primary;
+}
+
+
+
+
